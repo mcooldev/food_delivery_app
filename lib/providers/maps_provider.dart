@@ -1,8 +1,8 @@
 import 'dart:async';
 
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_polyline_points/flutter_polyline_points.dart';
-import 'package:food_delivery_app/constants/google_services.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
@@ -30,9 +30,8 @@ class MapsProvider with ChangeNotifier {
     List<LatLng> get polylineCoordinates => [..._polylineCoordinates];
   Future<List<LatLng>> getPolyline() async {
     ///
-    PolylinePoints polylinePoints = PolylinePoints();
+    PolylinePoints polylinePoints = PolylinePoints(apiKey: "${dotenv.env["gApiKey"]}");
     PolylineResult result = await polylinePoints.getRouteBetweenCoordinates(
-      googleApiKey: googleApiKey2,
       request: PolylineRequest(
         origin: PointLatLng(
           _sourceLocation.latitude,

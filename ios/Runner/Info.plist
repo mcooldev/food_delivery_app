@@ -2,14 +2,18 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+    <!--Dotenv api key-->
+    <key>API_KEY_NAME</key>
+    <string>$(API_KEY)</string>
+    <!--Location Permission-->
     <key>NSLocationWhenInUseUsageDescription</key>
     <string>This app needs access to location when open.</string>
     <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-        <string>Cette application utilise votre localisation pour vous montrer votre position sur la carte et calculer l'itinéraire de livraison.</string>
+    <string>Cette application utilise votre localisation pour vous montrer votre position sur la carte et calculer l'itinéraire de livraison.</string>
     <key>NSLocationTemporaryUsageDescriptionDictionary</key>
     <dict>
-      <key>YourPurposeKey</key>
-      <string>The example App requires temporary access to the device&apos;s precise location.</string>
+        <key>YourPurposeKey</key>
+        <string>The example App requires temporary access to the device&apos;s precise location.</string>
     </dict>
 	<key>CADisableMinimumFrameDurationOnPhone</key>
 	<true/>

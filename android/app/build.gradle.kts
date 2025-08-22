@@ -28,6 +28,7 @@ android {
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
+        buildConfigField "String", "API_KEY", "\"${dotenv.env['gApiKey']}\""
     }
 
     buildTypes {
