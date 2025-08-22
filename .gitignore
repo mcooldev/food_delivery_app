@@ -48,4 +48,4 @@ app.*.map.json
 *.env
 
 # AppDelegate
-ios/apikey.xcconfig
+*.xcconfig
