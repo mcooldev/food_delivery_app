@@ -21,7 +21,7 @@ class OrderTimelineTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       height: 44,
-      width: MediaQuery.sizeOf(context).width * 0.28,
+      width: MediaQuery.sizeOf(context).width * 0.25,
       child: TimelineTile(
         axis: TimelineAxis.horizontal,
         alignment: TimelineAlign.center,

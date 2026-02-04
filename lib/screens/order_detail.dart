@@ -291,6 +291,7 @@ class _OrderDetailState extends State<OrderDetail> {
 
                       /// Order timeline tile
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           OrderTimelineTile(
                             isFirst: true,

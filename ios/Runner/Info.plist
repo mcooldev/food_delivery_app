@@ -6,6 +6,12 @@
     <key>API_KEY_NAME</key>
     <string>$(API_KEY)</string>
     <!--Location Permission-->
+    <key>NSLocalNetworkUsageDescription</key>
+    <string>Cette application a besoin d'accéder à votre réseau local pour détecter et se connecter à d'autres appareils sur le même réseau.</string>
+    <key>NSBonjourServices</key>
+    <array>
+        <string>_http._tcp</string>
+    </array>
     <key>NSLocationWhenInUseUsageDescription</key>
     <string>This app needs access to location when open.</string>
     <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>

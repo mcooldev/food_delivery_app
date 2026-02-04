@@ -120,7 +120,8 @@ class _LogInState extends State<LogIn> {
                       const SizedBox(height: 32),
                       MaterialButton(
                         onPressed: () {
-                          logProv.logIn(context);
+                          // logProv.logIn(context);
+                          Navigator.of(context).pushNamed("/home");
                         },
                         elevation: 0,
                         shape: ContinuousRectangleBorder(

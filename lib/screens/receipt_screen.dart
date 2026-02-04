@@ -78,7 +78,7 @@ class _ReceiptScreenState extends State<ReceiptScreen> {
             /// headline info
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16.0),
-              child: Text("Votre commande est passé avec succès", style: h3),
+              child: Text("Votre commande est passée avec succès", style: h3),
             ),
             const SizedBox(height: 4),
 
